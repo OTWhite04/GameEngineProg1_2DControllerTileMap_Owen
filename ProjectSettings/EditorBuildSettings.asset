@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Unity2DTileMap.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Unity2DTilemap_Scene2.unity
+    guid: f231c973b50e46f41895faf271f32c1c
+  - enabled: 1
+    path: Assets/Scenes/Unity2DTilemap_Scene3.unity
+    guid: f550e7a840e504a4497fe49cbdfc1d42
   m_configObjects: {}
