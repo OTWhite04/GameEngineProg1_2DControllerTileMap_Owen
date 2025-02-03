@@ -11,11 +11,12 @@ public class LevelManager : MonoBehaviour
     //Load scene with spawn point method.
     public void LoadSceneWithSpawnPoint(string sceneName, string spawnPoint)
     {
+        //making the spawn point name be equal to the spawn point.
         spawnPointName = spawnPoint;
 
         //Scene manager subscribing to the on scene loaded method.
         SceneManager.sceneLoaded += OnSceneLoaded;
-
+        //Loads the scene with the scenes name.
         SceneManager.LoadScene(sceneName);
     }
 
@@ -33,7 +34,7 @@ public class LevelManager : MonoBehaviour
     public void SetPlayerToSpawn(string spawnPointName)
     {
 
-        //
+        //Finding the spawn point name for the spawn point object.
         GameObject spawnPointObject = GameObject.Find(spawnPointName);
 
         //If statement for the spawn point object not being null.
