@@ -13,7 +13,7 @@ public class TriggerSceneChange : MonoBehaviour
         
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene(sceneToLoad);
+            GameManager.Instance.levelManager.LoadSceneWithSpawnPoint(sceneToLoad, spawnPoint);
         }
     }
 }

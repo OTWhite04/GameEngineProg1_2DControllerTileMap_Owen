@@ -13,17 +13,14 @@ public class GameManager : MonoBehaviour
     {
         #region Singleton Pattern
 
-        if (Instance != null && Instance != this)
+        if(Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-
         #endregion
-
 
     }
 
